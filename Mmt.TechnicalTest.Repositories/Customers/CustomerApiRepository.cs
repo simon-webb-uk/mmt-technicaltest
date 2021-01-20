@@ -61,7 +61,7 @@ namespace Mmt.TechnicalTest.Repositories.Customers
                 return OperationResult.WithData<Customer>
                     .Failed;
             }
-            catch (FlurlHttpException ex)
+            catch
             {
                 return OperationResult.WithData<Customer>
                     .NoRecords;
